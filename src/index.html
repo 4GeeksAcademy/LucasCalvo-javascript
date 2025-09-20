@@ -5,28 +5,19 @@
   <title>Excuse Generator</title>
   <style>
     body {
-      text-align: center;
-      margin-top: 100px;
-    }
-    #excuse {
-      font-size: 24px;
-      margin: 20px;
-    }
-    button {
-      padding: 10px;
-      font-size: 20px;
-      border-radius: 10px;
-      background-color: green;
-      color: white;
+      display: flex;
+      flex-direction: column;      
+      justify-content: center;     
+      align-items: center;      
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      background-color: white;
     }
   </style>
-</head>
-<body>
-
+  </head>
+<body onload="generateExcuse()">
   <h1>Excuse Generator</h1>
-  <p id="excuse">Click the button to get an excuse!</p>
-  <button onclick="generateExcuse()">Generate Excuse</button>
-
+  <p id="excuse">My dog ate my homework</p>
   <script>
     let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
     let action = ['ate', 'peed', 'crushed', 'broke'];
@@ -42,6 +33,4 @@
       document.getElementById("excuse").innerText = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
     }
   </script>
-
 </body>
-</html>
