@@ -1,6 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
-
+body {
+      display: flex;
+      flex-direction: column;      
+      justify-content: center;     
+      align-items: center;      
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
